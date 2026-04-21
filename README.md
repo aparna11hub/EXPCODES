@@ -57,62 +57,36 @@ sudo systemctl start apache2
 sudo systemctl status apache2
 sudo nano /var/www/html/index.html
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Linux Server Welcome</title>
-    <style>
-        /* CSS Styling */
-        body {
-            background-color: #0c0c0c;
-            color: #00ff00;
-            font-family: 'Courier New', Courier, monospace;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-        .welcome-box {
-            text-align: center;
-            padding: 30px;
-            border: 1px solid #00ff00;
-            border-radius: 5px;
-            box-shadow: 0 0 15px rgba(0, 255, 0, 0.2);
-        }
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0;
-        }
-        .cursor {
-            display: inline-block;
-            width: 12px;
-            height: 24px;
-            background-color: #00ff00;
-            animation: blink 1s step-end infinite;
-            vertical-align: middle;
-        }
-        @keyframes blink {
-            50% { opacity: 0; }
-        }
-        .status {
-            color: #ffffff;
-            margin-top: 20px;
-            font-size: 0.9rem;
-        }
-    </style>
-</head>
-<body>
-    <!-- HTML Content -->
-    <div class="welcome-box">
-        <h1>Welcome to My Linux Server<span class="cursor"></span></h1>
-        <p class="status">System: Ubuntu 22.04 LTS | Status: Online</p>
-    </div>
+<html>
+<body style="margin:0;font-family:Arial;background:#f4f6f8;">
+
+<div style="background:#2c3e50;color:white;text-align:center;padding:25px;">
+<h1>Welcome to My Website</h1>
+<p>A simple webpage example</p>
+</div>
+
+<div style="background:#444;text-align:center;padding:8px;">
+<a href="#" style="color:white;margin:10px;">Home</a>
+<a href="#" style="color:white;margin:10px;">About</a>
+<a href="#" style="color:white;margin:10px;">Contact</a>
+</div>
+
+<div style="padding:25px;text-align:center;">
+<h2>Hello!</h2>
+<p>This is a small webpage built using HTML, CSS, and JavaScript.</p>
+
+<button onclick="alert('Working!')" 
+style="padding:8px;background:#3498db;color:white;border:none;">
+Click Me
+</button>
+</div>
+
+<div style="background:#2c3e50;color:white;text-align:center;padding:10px;">
+© 2026 My Website
+</div>
+
 </body>
 </html>
-
 
 Q. Deploy a custom webpage by replacing the default Apache page with your own HTML file displaying "My First Deployed Website", then restart the server and verify output.
 
@@ -120,59 +94,34 @@ cd /var/www/html/
 sudo rm index.html
 sudo nano index.html
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Linux Server Welcome</title>
-    <style>
-        /* CSS Styling */
-        body {
-            background-color: #0c0c0c;
-            color: #00ff00;
-            font-family: 'Courier New', Courier, monospace;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-        .welcome-box {
-            text-align: center;
-            padding: 30px;
-            border: 1px solid #00ff00;
-            border-radius: 5px;
-            box-shadow: 0 0 15px rgba(0, 255, 0, 0.2);
-        }
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0;
-        }
-        .cursor {
-            display: inline-block;
-            width: 12px;
-            height: 24px;
-            background-color: #00ff00;
-            animation: blink 1s step-end infinite;
-            vertical-align: middle;
-        }
-        @keyframes blink {
-            50% { opacity: 0; }
-        }
-        .status {
-            color: #ffffff;
-            margin-top: 20px;
-            font-size: 0.9rem;
-        }
-    </style>
-</head>
-<body>
-    <!-- HTML Content -->
-    <div class="welcome-box">
-        <h1>Welcome to My Linux Server<span class="cursor"></span></h1>
-        <p class="status">System: Ubuntu 22.04 LTS | Status: Online</p>
-    </div>
+<html>
+<body style="margin:0;font-family:Arial;background:#f4f6f8;">
+
+<div style="background:#2c3e50;color:white;text-align:center;padding:25px;">
+<h1>Welcome to My Website</h1>
+<p>A simple webpage example</p>
+</div>
+
+<div style="background:#444;text-align:center;padding:8px;">
+<a href="#" style="color:white;margin:10px;">Home</a>
+<a href="#" style="color:white;margin:10px;">About</a>
+<a href="#" style="color:white;margin:10px;">Contact</a>
+</div>
+
+<div style="padding:25px;text-align:center;">
+<h2>Hello!</h2>
+<p>This is a small webpage built using HTML, CSS, and JavaScript.</p>
+
+<button onclick="alert('Working!')" 
+style="padding:8px;background:#3498db;color:white;border:none;">
+Click Me
+</button>
+</div>
+
+<div style="background:#2c3e50;color:white;text-align:center;padding:10px;">
+© 2026 My Website
+</div>
+
 </body>
 </html>
 
