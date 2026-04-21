@@ -88,6 +88,8 @@ Click Me
 </body>
 </html>
 
+ip addr
+
 Q. Deploy a custom webpage by replacing the default Apache page with your own HTML file displaying "My First Deployed Website", then restart the server and verify output.
 
 cd /var/www/html/
@@ -126,6 +128,8 @@ Click Me
 </html>
 
 sudo systemctl restart apache2
+
+ip addr
 
 Q. Install a DNS server and verify domain name resolution by resolving google.com using a command-line tool.
 
